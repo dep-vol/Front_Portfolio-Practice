@@ -1,0 +1,46 @@
+.services__items {
+  margin-bottom: 2rem;
+}
+
+.services__title {
+  font-size: 1.4rem;
+  font-weight: 500;
+
+  display: block;
+  margin: 1rem 0;
+  text-align: center;
+
+  @media(max-width: $breakpoint_sm) {
+    font-size: 1rem;
+  }
+}
+
+.services__item {
+  padding: 1.5rem;
+  height: 100%;
+
+  background-color: $white;
+  border-radius: 10px;
+  box-shadow: $shadow;
+
+  position: relative;
+
+}
+
+.services__icon {
+  width: 4rem;
+  height: 4rem;
+
+  position: absolute;
+}
+
+.services__text {
+  margin-top: 1.8rem;
+
+  font-size: 1rem;
+  font-weight: 400;
+
+  @media(max-width: $breakpoint_sm) {
+    font-size: .8rem;
+  }
+}

@@ -1,0 +1,26 @@
+.lang {
+  text-align: right;
+  font-size: 1rem;
+  font-weight: 500;
+
+  list-style: none;
+
+  @media (max-width: $breakpoint_sm) {
+    font-size: .7rem;
+  }
+
+  @media (max-width: $breakpoint_sm_lg) {
+    font-size: .8rem;
+  }
+}
+
+.lang__item {
+  margin-right: .5rem;
+
+  text-decoration: none;
+  color: $black;
+
+  &.active {
+    color: $pink;
+  }
+}

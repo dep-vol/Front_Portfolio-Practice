@@ -1,0 +1,30 @@
+.social {
+  display: flex;
+  align-items: center;
+}
+
+.social__title {
+  margin-right: 1.8rem;
+
+  font-weight: 600;
+  font-size: .8rem;
+}
+
+.social__link {
+
+}
+
+.social__icon {
+  margin-right: .8rem;
+  height: 25px;
+  width: 25px;
+
+  fill: #ababab;
+
+  transition: fill .1s linear;
+
+  &:hover {
+    fill: $black;
+    box-shadow: $shadow;
+  }
+}

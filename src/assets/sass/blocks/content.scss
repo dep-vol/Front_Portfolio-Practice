@@ -1,0 +1,28 @@
+.content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  @media(orientation: landscape) {
+    margin: 6rem 0;
+  }
+}
+
+.content__title{
+  font-size: 2rem;
+  font-weight: 700;
+
+  @media(max-width: $breakpoint_sm_lg) {
+    font-size: 1.8rem;
+  }
+
+  @media(max-width: $breakpoint_sm) {
+    font-size: 1.5rem;
+  }
+
+
+  @media(max-width: 860px) {
+    margin-top: 3rem;
+  }
+}

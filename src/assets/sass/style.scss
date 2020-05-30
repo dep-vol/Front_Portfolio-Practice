@@ -1,0 +1,63 @@
+@import "vars";
+
+html {
+  font-size: 15px;
+}
+
+body {
+  margin: 0;
+  
+  font-size: 1rem;
+  font-family: 'Montserrat', serif;
+  line-height: 1.5;
+  color: $black;
+
+  background-color: $grey;
+}
+
+.page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/*
+BOOTSTRAP MODULES
+ */
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/grid";
+@import "../../../node_modules/bootstrap/scss/modal";
+@import "../../../node_modules/bootstrap/scss/transitions";
+
+/* IMPORTS */
+@import "blocks/header";
+@import "blocks/logo";
+@import "blocks/nav";
+@import "blocks/lang";
+@import "blocks/content";
+@import "blocks/intro";
+@import "blocks/btn";
+@import "blocks/contacts";
+@import "blocks/author";
+@import "blocks/circle";
+@import "blocks/social";
+@import "blocks/modal";
+@import "blocks/form";
+@import "blocks/input";
+@import "blocks/services";
+@import "blocks/portfolio";
+@import "blocks/footer";
+
+
+/*-------*/
+
+/* VENDORS */
+@import "vendors/slick";
