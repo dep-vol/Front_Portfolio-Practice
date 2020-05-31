@@ -1,14 +1,19 @@
 <!doctype html>
 <html lang="ru">
 <head>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/style.min.css">
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Портфолио</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link
+    href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap&subset=cyrillic"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="assets/css/style.min.css" />
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+  />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Портфолио</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
 <!-- <svg> -->
@@ -170,55 +175,64 @@
     <div class="content">
 
         <div class="container">
-            <h1 class="content__title">Мои работы</h1>
-            <div class="portfolio">
+          <h1 class="content__title">Мои работы</h1>
+          <div class="portfolio">
+            <button class="portfolio__arrow portfolio__arrow--left" id="prev">
+              <svg class="portfolio__icon">
+                <use xlink:href="#arrow"></use>
+              </svg>
+            </button>
+            <button class="portfolio__arrow portfolio__arrow--right" id="next">
+              <svg class="portfolio__icon">
+                <use xlink:href="#arrow"></use>
+              </svg>
+            </button>
         
-                <button class="portfolio__arrow portfolio__arrow--left" id="prev">
-                    <svg class="portfolio__icon">
-                        <use xlink:href="#arrow"></use>
-                    </svg>
-                </button>
-                <button class="portfolio__arrow portfolio__arrow--right" id="next">
-                    <svg class="portfolio__icon">
-                        <use xlink:href="#arrow"></use>
-                    </svg>
-                </button>
+            <div id="slider" class="portfolio__slider">
+              <div>
+                <div class="portfolio__item">
+                  <a class="portfolio__link" href="#" target="_blank">
+                    <img
+                      class="portfolio__img"
+                      src="assets/img/portfolio/1.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <div class="portfolio__title">Сайт проекта CarTuning.pro</div>
+                </div>
+              </div>
         
-                <div id="slider" class="portfolio__slider">
+              <div>
+                <div class="portfolio__item">
+                  <a class="portfolio__link" href="#" target="_blank">
+                    <img
+                      class="portfolio__img"
+                      src="assets/img/portfolio/2.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <div class="portfolio__title">Сайт проекта UUU.hr</div>
+                </div>
+              </div>
         
-                    <div>
-                        <div class="portfolio__item">
-                            <a class="portfolio__link" href="#" target="_blank">
-                                <img class="portfolio__img" src="/assets/img/portfolio/1.jpg" alt="">
-                            </a>
-                            <div class="portfolio__title">Сайт проекта CarTuning.pro</div>
-                        </div>
-                    </div>
-        
-                    <div>
-                        <div class="portfolio__item">
-                            <a class="portfolio__link" href="#" target="_blank">
-                                <img class="portfolio__img" src="/assets/img/portfolio/2.jpg" alt="">
-                            </a>
-                            <div class="portfolio__title">Сайт проекта UUU.hr</div>
-                        </div>
-                    </div>
-        
-                    <div>
-                        <div class="portfolio__item">
-                            <a class="portfolio__link" href="#" target="_blank">
-                                <img class="portfolio__img" src="/assets/img/portfolio/2.jpg" alt="">
-                            </a>
-                            <div class="portfolio__title">Сайт проекта UUU.hr</div>
-                        </div>
-                    </div>
-        
-                </div><!-- ./slider -->
-            </div><!-- ./portfolio__slider -->
-        
-        
+              <div>
+                <div class="portfolio__item">
+                  <a class="portfolio__link" href="#" target="_blank">
+                    <img
+                      class="portfolio__img"
+                      src="assets/img/portfolio/2.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <div class="portfolio__title">Сайт проекта UUU.hr</div>
+                </div>
+              </div>
+            </div>
+            <!-- ./slider -->
+          </div>
+          <!-- ./portfolio__slider -->
         </div>
-        <script src="/assets/js/app.js"></script>
+        <script src="assets/js/app.js"></script>
 
     </div>
 

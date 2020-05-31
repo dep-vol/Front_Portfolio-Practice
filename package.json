@@ -1,4 +1,5 @@
 {
+  "homepage": "http://dep-vol.github.io/Front_Portfolio-Practice",
   "name": "template_project",
   "version": "1.0.0",
   "description": "Gulp test",
@@ -11,6 +12,7 @@
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "del": "^5.1.0",
+    "gh-pages": "^3.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-cssbeautify": "^2.0.1",
@@ -24,7 +26,8 @@
     "gulp-uglify": "^3.0.2"
   },
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "deploy": "gh-pages -d dist"
   },
   "author": "dep-vol@mail.ru",
   "license": "ISC"
